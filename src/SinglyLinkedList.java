@@ -45,7 +45,7 @@ public class SinglyLinkedList<E> {
         while (current != null) {
             if (current.getData() instanceof Resep) {
                 Resep resep = (Resep) current.getData();
-                if (resep.getNama().equals(namaResep)) {
+                if (resep.getNama().equalsIgnoreCase(namaResep)) {
                     pencarian = resep;
                     break;
                 }
